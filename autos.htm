@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos en Alquiler</title>
+    <link rel="stylesheet" href="estilos.css">
+	<script>
+        function mostrarImagen(idImagen) {
+            document.getElementById(idImagen).style.display = "block";
+        }
+
+        function ocultarImagen(idImagen) {
+            document.getElementById(idImagen).style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>Autos en Alquiler</h1>
+            <nav>
+               
+            </nav>
+        </header>
+        <section id="contenido">
+            <article>
+              <h2>Menu Principal</h2>
+              <ul>
+                    <li><a href="Ejercicio3.html" target="_self">Inicio</a></li>
+                    <li><a href="autos.htm" title="Autos" target="new">Autos</a></li>
+					<li><a href="contacto.htm" title="Contacto" target="new">Contacto</a></li>
+                </ul>
+          </article>
+        </section>
+			<section id="autos">
+			<article>
+			  <h1><strong><em> AUTOS </em></strong></h1>
+			  <section id="contenidoautos">
+            <div class="galeria">
+                <div class="imagen">
+                    <img src="Imagenes/img1.jpg" width="600" height="450" alt="Auto 1"
+					onmouseover="mostrarImagen('img1')" onmouseout="ocultarImagen('img1')"/>
+                    <div id="img1" class="capa" style="display: none;">
+						<p>Veneno Roadster</p>
+						<p>
+						El Lamborghini Veneno Roadster lleva la eficiencia aerodinámica de un prototipo de carreras a las carreteras de todos los días. Este superdeportivo se caracteriza por una aerodinámica óptima, para garantizar la estabilidad en las curvas rápidas y un comportamiento similar al de un prototipo de carreras. Todo esto en un coche diseñado para la carretera. El coche ideal para los amantes de la conducción deportiva.
+						</p>
+                    </div>
+                </div>
+                <div class="imagen">
+                  <img src="Imagenes/img2.jpg" width="600" height="300" alt="Auto 2"
+					onmouseover="mostrarImagen('img2')" onmouseout="ocultarImagen('img2')"/>
+                    <div id="img2" class="capa" style="display: none;">
+                      <p>Porsche 911 GT</p>
+						<p>
+						El Porsche 911 GT3 es un automóvil deportivo cupé de dos puertas, con motor plano de seis cilindros en disposición trasera montado longitudinalmente y de tracción trasera, producido por el fabricante alemán Porsche AG desde 1999. Se trata de una versión más radical del 911 estándar con motor naturalmente aspirado.
+						</p>
+                    </div>
+                </div>
+                <div class="imagen">
+				  <img src="Imagenes/img3.jpg" width="600" height="334" alt="Auto 3"
+					onmouseover="mostrarImagen('img3')" onmouseout="ocultarImagen('img3')"/>
+                    <div id="img3" class="capa" style="display: none;">
+                    <p>Ferrari Enzo</p>
+					<p>
+					El Ferrari Enzo es un automóvil superdeportivo berlinetta de dos puertas diédricas biplaza, producido por el fabricante italiano Ferrari entre 2002 y 2004. Inicialmente se pensó en una producción limitada de 349 unidades, pero en realidad se construyeron 400.
+					Su precio base cuando nuevo era de US$652 890 ($936 660 en 2024), mientras que su precio actual puede llegar a 3 000 000 €.
+					</p>
+						
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Sergio Andres Fuentes Romero &copy; 2024</p>
+        </footer>
+            </article>
+        </section>
+       </div>
+</body>
+</html>
